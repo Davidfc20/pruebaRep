@@ -21,6 +21,9 @@ public class Date {
   private final int month;
   private final int year;
 
+  public void methodAddedByOwner{
+    System.out.println("Method Added By The Owner");
+  }
   /**
    * Retrieves the day component of this date.
    *
@@ -56,6 +59,10 @@ public class Date {
    * @param year The year (should ideally be within the valid range of 1900 to 2050 for validation
    *     to pass).
    */
+<<<<<<< HEAD
+=======
+  // Constructor modified by the owner
+>>>>>>> ffaa5ff6a907bd2de2fd0e9f38874156c91c8214
 
   public Date(int day, int month, int year) {
     this.day = day;
@@ -63,11 +70,7 @@ public class Date {
     this.year = year;
   }
   // Constructor modified by the collaborator ALEJANDRO
-  public Date(int tag, int monat, int jahr) {
-    this.day = tag;
-    this.month = monat;
-    this.year = jahr;
-  }
+
   /**
    * Validates the date according to the predefined rules: the year must be within 1900 to 2050, the
    * month within 1 to 12, and the day valid within the given month and year, considering leap
